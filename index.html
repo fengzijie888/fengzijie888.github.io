@@ -152,14 +152,12 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Maven菜鸟成长过程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一章</p>
-<p>##第二章</p>
-<p>##第三章</p>
+        <p>#Maven 是什么？<br>    Maven 是一个项目管理和整合工具。Maven 为开发者提供了一套完整的构建生命周期框架。<br>    开发团队几乎不用花多少时间就能够自动完成工程的基础构建配置，因为 Maven 使用了一个标准的目录结构和一个默认的构建生命周期。<br>    在有多个开发团队环境的情况下，Maven 能够在很短的时间内使得每项工作都按照标准进行。<br>    因为大部分的工程配置操作都非常简单并且可复用，在创建报告、检查、构建和测试自动配置时，Maven 可以让开发者的工作变得更简单。<br>    (1)Maven是一款服务于Java平台的自动化构建工具。<br>    (2)构建：  &lt;1&gt;以Java源文件、框架配置文件、HTML、JSP等原材料去生产一个可以运行的项目的过程(包含编译、部署、搭建)。<br>        编译：Java源文件[XXX.java]-&gt;编译-&gt;Class字节码文件[XXX.class]-&gt;JVM执行<br>        部署：BS项目最终运行的并不是动态Web工程，而是动态Web工程编译的结果<br>#为什么，什么时候运用到Maven<br>    -生产环境下开发对Maven的需求，<br>    (1)一个项目就是一个工程<br>       当项目非常庞大，我们需要划分几十上百个模块，那么我们就不适合继续用package来划分模块。<br>      我们应借助Maven来将一个项目拆分成多个工程，然而每一个模块对应一个工程，有利于分工合作。<br>    (2)在项目中需要的jar包比较多，同样的jar包可能重复出现在不同的项目工程里，这一方面会浪费存储空间，另一方面<br>    也会让工程显得臃肿，此时借用Maven，将jar包保存在”仓库中”，有需要引用这些jar包的工程就引用此文件接口。<br>    (3)关于jar包的下载，有些技术的官网就是通过Maven或SVN等专门的工具来提供下载。借助Maven可以以一种规范的方式下载jar包。<br>    因为所有知名框架或第三方工具的jar包按照统一的规范存放在了Maven的中央仓库中。<br>    (4)关于jar包的依赖关系，也可借助Maven来解决。Maven会自动将被依赖的jar包导入进来。</p>
 
       
 
@@ -172,82 +170,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/05/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-05T13:26:45.194Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/05/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/08/06/Maven%E8%8F%9C%E9%B8%9F%E6%88%90%E9%95%BF%E8%BF%87%E7%A8%8B/">展开全文 >></a>
         </p>
       
 
